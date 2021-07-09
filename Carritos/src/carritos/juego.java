@@ -48,16 +48,19 @@ public class juego {
                 //System.out.println("la distancia a  recorrer : " + );
                 //c.calcularDistancia(recorrido);
                 c.setDistancia(recorrido);
-                System.out.println("la distancia que lleva es : " + c.getDistancia());
+                
                  int result=p.getDistancia() - c.getDistancia();
                 if (dado > primero) {
                     primero = i;
+                    System.out.println("la distancia que lleva es : " + c.getDistancia());
                     System.out.println("le faltan " + result + " metros ");
                 } else if (dado > segundo) {
                     segundo = i;
+                    System.out.println("la distancia que lleva es : " + c.getDistancia());
                     System.out.println("le faltan " + result + " metros ");
                 } else if (dado > tercero) {
                     tercero = i;
+                    System.out.println("la distancia que lleva es : " + c.getDistancia());
                     System.out.println("le faltan " + result + " metros ");
                 }
                 
@@ -71,7 +74,7 @@ public class juego {
                     cont = -1;
 
                 }
-                System.out.println("la ronda es " + cont);
+               
             }
        
         }
