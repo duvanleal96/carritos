@@ -50,5 +50,5 @@ public class conductor {
     public void setDistancia(int distancia) {
         this.distancia += distancia;
     }
-
+    
 }

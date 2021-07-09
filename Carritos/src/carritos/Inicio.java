@@ -10,13 +10,15 @@ package carritos;
  * @author Duvan leal
  */
 import java.util.Scanner;
-
+import java.io.FileWriter;
+import java.io.IOException;
 public class Inicio {
 
     Scanner entrada = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         
+        FileWriter fichero = new FileWriter ("C:/Users/Usuario/Ganadores.txt");
         pista p = new pista();
         carril c = new carril();
         c.capturarCarriles();
@@ -29,8 +31,11 @@ public class Inicio {
         jug.jugadores(c.getNumb());
         System.out.println("el numero de jugadores es : "+ c.getNumb());
         juego j= new juego();
+        System.out.println("la cantidad de carriles es "+ c.getNumb());
+        System.out.println("la cantidad de autos es "+ c.getNumb());
         j.iniciarJuego(c.getNumb());
-        
+        fichero.write("primer puesto : "+j.getPrimero()+"\n"+"segundo puesto : "+"\n"+j.getSegundo()+"tercer puesto : "+j.getTercero());
+        fichero.close();
     }
 
 }
