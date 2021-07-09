@@ -14,22 +14,20 @@ public class pista {
     Scanner entrada= new Scanner(System.in);
     
     
-    int recorrido;
+    int distancia;
  public void capturarPista(){
-     System.out.print("ingrese el tamaño de la pista en kilometros : ");
-      recorrido = entrada.nextInt();
+     System.out.print(" ingrese el tamaño de la pista en kilometros : ");
+      distancia = (entrada.nextInt())*1000;
  }
- public void obtenerPista(int distancia){
-         recorrido = distancia;
-    }
+ 
  
 
-    public int getRecorrido() {
-        return recorrido;
+    public int getDistancia() {
+        return distancia;
     }
 
-    public void setRecorrido(int recorrido) {
-        this.recorrido = recorrido;
+    public void setDistancia(int distancia) {
+        this.distancia = distancia;
     }
    
     

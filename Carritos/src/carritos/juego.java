@@ -32,37 +32,44 @@ public class juego {
         p.capturarPista();
         int cont = 0;
         int min = 1;
-        int max = 6;
-        System.out.println("numero es : " + numero);
-        //while (cont >= 0) {
+        int max = 5;
+       // System.out.println("numero es : " + numero);
+        while (cont >= 0) {
             for (int i = 1; i <= numero; i++) {
                 int dado = r.nextInt(max+min)+min;
                  int recorrido = dado * 100;
-                System.out.println("el dado girado es  : " + dado);
+                 System.out.println("el jugador " + i);
+                System.out.println("el dado tirado es : " + dado);
                 System.out.println("el recorrido es de : " + recorrido);
+                System.out.println("le faltan " + c.getDistancia());
                 //System.out.println("la distancia a  recorrer : " + );
                 c.calcularDistancia(recorrido);
-                con[i].setDistancia(recorrido);
+                c.setDistancia(recorrido);
                 if (dado > primero) {
-                    System.out.println("esss" + con[i].getDistancia());// primero = i;
+                    primero = i;
+                    System.out.println(" la distancia que lleva es : " + c.getDistancia());// primero = i;
                 } else if (dado > segundo) {
                     segundo = i;
+                    System.out.println(" la distancia que lleva es : " + c.getDistancia());
                 } else if (dado > tercero) {
                     tercero = i;
+                    System.out.println(" la distancia que lleva es : " + c.getDistancia());
                 }
-                if (con[primero].getDistancia() <= p.getRecorrido()) {
+                if (c.getDistancia() <= p.getDistancia()) {
                     cont++;
-                } else if (con[segundo].getDistancia() <= p.getRecorrido()) {
+                } else if (c.getDistancia() <= p.getDistancia()) {
                     cont++;
-                } else if (con[tercero].getDistancia() >=  p.getRecorrido()) {
+                } else if (c.getDistancia() >=  p.getDistancia()) {
                     cont = -1;
                 }
+           System.out.println("la ronda es "+ cont);
             }
-            /*System.out.println("el primer lugar es el conductor " + primero);
-            System.out.println("el primer lugar es el conductor " + tercero);
-            System.out.println("el primer lugar es el conductor " + tercero);
-             */
-        //}
+           
+            System.out.println("el primer lugar es el conductor " + primero);
+            System.out.println("el segundo lugar es el conductor " + segundo);
+            System.out.println("el tercer lugar es el conductor " + tercero);
+             
+        }
 }
     public juego() {
     }

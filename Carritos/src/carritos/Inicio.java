@@ -27,7 +27,7 @@ public class Inicio {
         con.obtenerNumeroConductor(c.getNumb());
         car.carro(c.getNumb());
         jug.jugadores(c.getNumb());
-        System.out.println("el numero de jugadores es :"+ c.getNumb());
+        System.out.println("el numero de jugadores es : "+ c.getNumb());
         juego j= new juego();
         j.iniciarJuego(c.getNumb());
         

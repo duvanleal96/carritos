@@ -23,7 +23,7 @@ public class conductor {
     }
 
     public void calcularDistancia(int dist) {
-       this.distancia = dist+dist;
+       this.distancia += dist;
     }
 
     public void distanciaRecorrida(int dis) {
