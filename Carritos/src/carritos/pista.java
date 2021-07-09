@@ -12,16 +12,12 @@ package carritos;
 import java.util.Scanner;
 public class pista {
     Scanner entrada= new Scanner(System.in);
-    
-    
-    int distancia;
+    int distancia=0;
  public void capturarPista(){
      System.out.print(" ingrese el tamaño de la pista en kilometros : ");
       distancia = (entrada.nextInt())*1000;
  }
  
- 
-
     public int getDistancia() {
         return distancia;
     }

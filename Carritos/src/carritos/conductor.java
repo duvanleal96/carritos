@@ -11,23 +11,36 @@ package carritos;
  */
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class conductor {
 
+    Scanner entrada = new Scanner(System.in);
     Random r = new Random();
     int[] conductor;
-   int distancia = 0;
-    
+    int distancia=0;
+    String nombre;
     public void obtenerNumeroConductor(int conductores) {
         conductor = new int[conductores];
     }
 
     public void calcularDistancia(int dist) {
-       this.distancia += dist;
+        this.distancia = dist;
     }
 
-    public void distanciaRecorrida(int dis) {
-        this.distancia += dis;
+    public void nombreJugadores(int numero) {
+        for(int i=1;i<numero;i++){
+        System.out.println("ingrese el nombre del jugador " + i);
+        nombre=entrada.next();
+        }
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getDistancia() {
