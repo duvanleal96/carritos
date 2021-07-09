@@ -7,7 +7,7 @@ package carritos;
 
 /**
  *
- * @author Edyson Leal
+ * @author Duvan leal
  */
 public class podio {
     int idPodio;

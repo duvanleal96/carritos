@@ -18,22 +18,16 @@ public class Inicio {
     public static void main(String[] args) {
         
         pista p = new pista();
-        p.capturarPista();
-        
         carril c = new carril();
         c.capturarCarriles();
-        
-        
         conductor con = new conductor();
         carro car = new carro();
         jugador jug = new jugador();
-        
-        
         c.carriles(c.getNumb());
         con.obtenerNumeroConductor(c.getNumb());
         car.carro(c.getNumb());
         jug.jugadores(c.getNumb());
-        
+        System.out.println("el numero de jugadores es :"+ c.getNumb());
         juego j= new juego();
         j.iniciarJuego(c.getNumb());
         

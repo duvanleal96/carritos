@@ -10,27 +10,19 @@ package carritos;
  * @Duvan  Leal
  */
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 public class pista {
     Scanner entrada= new Scanner(System.in);
     
-    int kilometros;
+    
     int recorrido;
  public void capturarPista(){
      System.out.print("ingrese el tamaño de la pista en kilometros : ");
       recorrido = entrada.nextInt();
  }
  public void obtenerPista(int distancia){
-         kilometros = distancia;
+         recorrido = distancia;
     }
  
-    public int getKilometros() {
-        return kilometros;
-    }
-
-    public void setKilometros(int kilometros) {
-        this.kilometros = kilometros;
-    }
 
     public int getRecorrido() {
         return recorrido;

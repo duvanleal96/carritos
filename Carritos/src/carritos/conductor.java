@@ -10,18 +10,24 @@ package carritos;
  * @author Duvan Leal
  */
 import java.util.ArrayList;
+import java.util.Random;
 
 public class conductor {
 
-    int []conductor;
-    int distancia=0;
-
-    public void obtenerNumeroConductor(int conductores) {
-        conductor = new int [conductores];
-    }
+    Random r = new Random();
+    int[] conductor;
+   int distancia = 0;
     
-    public void distanciaRecorrida(int dis){
-        distancia += dis;
+    public void obtenerNumeroConductor(int conductores) {
+        conductor = new int[conductores];
+    }
+
+    public void calcularDistancia(int dist) {
+       this.distancia = dist+dist;
+    }
+
+    public void distanciaRecorrida(int dis) {
+        this.distancia += dis;
     }
 
     public int getDistancia() {

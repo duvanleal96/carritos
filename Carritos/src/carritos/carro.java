@@ -10,7 +10,7 @@ package carritos;
  * @author Duvan Leal
  */
 
-import carritos.jugador;
+
 
 public class carro {
 
