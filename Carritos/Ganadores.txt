@@ -1,0 +1,3 @@
+primer puesto : 5
+segundo puesto : 7
+tercer puesto : 6

@@ -18,7 +18,7 @@ public class Inicio {
 
     public static void main(String[] args) throws IOException{
         
-        FileWriter fichero = new FileWriter ("C:/Users/Usuario/Ganadores.txt");
+        FileWriter fichero = new FileWriter ("C:/Users/Usuario/Downloads/Ganadores.txt");
         pista p = new pista();
         carril c = new carril();
         c.capturarCarriles();
@@ -34,7 +34,7 @@ public class Inicio {
         System.out.println("la cantidad de carriles es "+ c.getNumb());
         System.out.println("la cantidad de autos es "+ c.getNumb());
         j.iniciarJuego(c.getNumb());
-        fichero.write("primer puesto : "+j.getPrimero()+"\n"+"segundo puesto : "+"\n"+j.getSegundo()+"tercer puesto : "+j.getTercero());
+        fichero.write("primer puesto : "+j.getPrimero()+"\n"+"segundo puesto : "+j.getSegundo()+"\n"+"tercer puesto : "+j.getTercero());
         fichero.close();
     }
 
